@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Week 1 – Tic Tac Toe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thicker than a bowl of oatmeal.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+Make a copy of this template on you or your partner's personal GitHub account. Please do not clutter the `web-at-berkeley` organization.
 
-### `npm start`
+You should now have a personal copy of this starter code. Clone the repo so you have it locally, then make a new branch using
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+git checkout -b development
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install packages:
 
-### `npm test`
+```sh
+yarn
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Finally:
 
-### `npm run build`
+```sh
+yarn start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+and open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you're using VSCode, it's recommended to go into settings and set `eslint.codeActionsOnSave.mode` to `all` and `editor.formatOnSave` to `true`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Phases
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Phase 1 (recommended Saturday)** – Developing a model/outline of how the UI will be structured (component hierarchies, deciding how to use state + props, etc.). **Write in a .txt file and submit for review.**
+- **Phase 2** **(rec. Monday)** – Adding all the components and finishing the hierarchies (Components don't have to be filled out completely, we just want you to get the hierarchies down first)
+- **Phase 3** **(rec. Wednesday)** – Adding in data logic and persistence logic :))
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Requirements**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Your final product should look like this: [link to Figma](https://www.figma.com/file/BX1RYUilFGySN1A81M32e3/Designs?node-id=0%3A1)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Technical Requirements**
 
-## Learn More
+- React - Create React App
+- Chakra UI instead of plain HTML
+  - [Chakra Text](https://chakra-ui.com/docs/typography/text) instead of `<p>`
+  - [Chakra Button](https://chakra-ui.com/docs/form/button) instead of `<button>`
+  - etc.
+- Typescript ([refresher here](https://www.youtube.com/watch?v=ahCwqrYpIuM&ab_channel=Fireship))
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Functional Requirements**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Must be a 2 player game
+- Game board must be made of cards - each card is either an X or an O or not filled in yet
+- Keep track of # of wins or loses
+- Persisted across refreshes
+- After each win or loss, have a button to reset
 
-### Code Splitting
+## Submission
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Add** your team information to [this spreadsheet](https://docs.google.com/spreadsheets/d/1dXsNPQxYvZUX6gAXzCfX8q1HVj6jUGKO1bn1RNyhZsI/edit?usp=sharing)
 
-### Analyzing the Bundle Size
+For each phase, **create** a PR from development to `main`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Send** the link to `#bootcamp-devs-checkoffs` on Slack for review
